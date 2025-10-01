@@ -1,15 +1,15 @@
-#Autor:Daniel Gomez Mican
 #EJERCICIO 1: Suma de pares positivos
-n1=(int(input("ingrese un numero: ")))
-n2=(int(input("ingrese un numero: ")))
-n3=(int(input("ingrese un numero: ")))
-n4=(int(input("ingrese un numero: ")))
-n5=(int(input("ingrese un numero: ")))
-for a in (n1,n2,n3,n4,n5):
-  if(a>0):
-    print("La suma de los positivos pares es: ")
-'''
+def EJERCICIO_1():
+  total= 0
+  for a in range(5): 
+        a = int(input("Ingrese un numero: "))
+        if (a > 0 and a % 2 == 0):
+            total += a
+  print("La suma de los números pares positivos es:", (total))
+
+
 #EJERCICIO 2: Clasificacion de edad
+def EJERCICIO_2():
 EJ2=int(input("ingrese su edad: "))
 if(EJ2<=13):
   print("Niño")
@@ -19,10 +19,10 @@ elif(18<EJ2<=59):
   print("Adulto")
 else:
   print("Adulto mayor")
-'''
-'''
-#hOolAa mUundIiEe
+
+
 #EJERCICIO 3: Contador de vocales
+def EJERCICIO_3():
 p= input("ingrese una palabra: ")
 a=p.count("a")+ p.count("A")
 e=p.count("e")+ p.count("E")
@@ -35,4 +35,3 @@ print(f"e:", (e) )
 print(f"i:", (i) )
 print(f"o:", (o) )
 print(f"u:", (u) )
-'''
